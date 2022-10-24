@@ -155,7 +155,7 @@ body {
 
 
 
-/* PARTIE LOCALISATION */
+/* ...................PARTIE LOCALISATION ...................................*/
 
 .location {
     display: flex;
@@ -171,7 +171,7 @@ body {
 
 
 
-/*PARTIE EXPLORATION */
+/*......................PARTIE BOUTON RECHERCHE ....................................*/
 
 .explore_menu {
     display: flex;
@@ -205,7 +205,9 @@ body {
 .first-button input:hover {
     -webkit-box-shadow: 0px 9px 20px 1px grey;
     box-shadow: 0px 9px 20px 1px grey;
+    transform:scale(1.1);
 }
+
 
 .explore_menu {
     padding-top: 20px;
@@ -214,7 +216,7 @@ body {
 
 
 
-/* PARTIE FILTRES */
+/* ..........................PARTIE FILTRES.................................. */
 .menu_stage h3 {
     width: 100%;
 }
@@ -244,11 +246,9 @@ body {
     height: 50px;
     align-items: center;
     justify-content: center;
-}
-
-.card_stage .fa-solid{
     color: grey;
 }
+
 
 .card_stage .fa-solid:hover{ /* COULEUR VIOLETTE AU SURVOL DES FILTRES*/
     color:#9356DC;
@@ -265,13 +265,10 @@ body {
     height: 28px;
 }
 
-
-
-.filter{  /* Arrivée progressive des filtres*/
+/* .filter{  Arrivée progressive des filtres
        opacity: 0;
     animation:fadein 5s;
-    -moz-animation: fadein 5s;
-  
+    -moz-animation: fadein 5s; 
 }
 
 .filter { 
@@ -287,7 +284,7 @@ body {
     }
 }
 
- /* FILTRES PARTIE NUMERO*/
+ /* FILTRES --> Mise en forme Partie numeros 1,2,3 */
 
 .bloc-number {
     margin-left: -11px;
@@ -301,7 +298,7 @@ h4 .numbers {
     margin-right: 20px;
 }
 
-/*PARTIE CARDS RESTAURANT*/
+/*.................PARTIE CARDS RESTAURANT......................................*/
 
 .card-restaurants{
     flex-direction: column;
@@ -309,7 +306,6 @@ h4 .numbers {
  padding-top: 50px;
     padding-left: 20px;
     padding-right: 20px;
-
 }
 
 .cards{
@@ -327,11 +323,14 @@ h4 .numbers {
     width: 100%;
     height: 230px;
     position: relative;
-  
+  transition:all 500ms ;
     /* flex-grow: 1;
     width:203px*/
 }
-
+.card_repas:hover{ /* Agrandissement card au survol */
+    transform: scale(1.05);
+    transition-duration: 500ms;
+}
 .card_repas img {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -360,19 +359,54 @@ margin:10px
     top: 15px;
     right: 15px;
     background-color: #a9e0d1;
+    animation: heartbeat 1.5s ease-in-out infinite both; /* Clignotement carte nouveau */
 }
 
-/*COEUR*/
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+
+/* CARD - COEUR*/
 
 .fa-heart::before{
     padding: 20px;
 }
 .heart{
     position: relative;
-   
+    transition:all 500ms;
     
 }
-
 .heart .fa-solid{
     position: absolute;
     opacity: 0;
@@ -383,17 +417,25 @@ margin:10px
     width: 300px;
 
 }
-  
+.heart:hover {
+    transform: scale(1.5);
+    transition:all 500ms;
+ }  
 .heart:hover .fa-solid{
     opacity: 1;
  }   
 
+
  
-/*FOOTER*/
+/*...................................FOOTER........................................*/
 
 .container_footer{
     background-color: #353535;
-       
+    text-align: center;
+}
+
+.menu_in_footer:hover{ /* chgmt couleur "ul" au survol */
+    color:#99E2D0;
 }
 
 .column{
@@ -436,7 +478,7 @@ margin-right: 10px;
         background-color: white;
     }
 
-    /*HEADER */
+    /*.................................HEADER................................. */
     .container_logo {
         background-color: white;
         box-shadow: 0px 0px 12px 0px grey;
@@ -452,21 +494,17 @@ margin-right: 10px;
     .logo {
         text-align: center;
     }
-/*PARTIE CARD RESTAURANT */
+/*...................................PARTIE CARD RESTAURANT ..................................*/
     .cards{
         display: flex;
         flex-wrap: wrap;
         /*flex-wrap: wrap;*/
-       justify-content: space-around;
-        
+       justify-content: space-around;  
     }
 
    .card_repas{
     width: 300px;
    }
-
-
-
 }
 
 

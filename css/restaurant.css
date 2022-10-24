@@ -21,7 +21,7 @@ body {
    
 
 
-/* PARTIE HEADER */
+/*................................... PARTIE HEADER ...................................*/
 
 .container_logo {
     display: flex;
@@ -29,8 +29,6 @@ body {
     box-shadow: 0px 0px 12px 0px grey;
     align-items: center;
     /*position: fixed;*/
-   
-    
 }
 
 /*.fleche{
@@ -57,9 +55,7 @@ body {
 
 
 
-/**************PARTIE IMAGE******************/
-/*IMAGE ET TITRE */
-
+/**************Partie image du restaurant  ******************/
 .affiche_restau img{
     width: 100%;
     object-fit: cover;
@@ -74,26 +70,22 @@ body {
     padding: 30px;
 }
 
-/*************PARTIE MENUS *******************/
-/* NOM DU REST0 */
+
+
+/* Nom du restaurant et coeur  */
 
 .title_restau{
    display: flex;
     align-items: center;
     justify-content: center; 
 }
-
 .tiret_bleu{
     width: 40px;
     border-bottom: 2px solid rgb(125, 193, 238);
     margin-left: 30px;
 }
 
-/*LISTE DES MENUS */
-.menu_list{
-    padding: 11px;
-}
-
+/*****************************LISTE DES MENUS ***********************************************/
 
 .menu_plats{
     background-color: whitesmoke;
@@ -102,6 +94,9 @@ body {
     position: relative;
    margin-top: -60px; 
  
+}
+.menu_list{
+    padding: 11px;
 }
 .entrees_menu h3{  
    font-size: 17px; 
@@ -112,7 +107,7 @@ body {
     font-size: 100px; 
 }
 
-/* Arrivée progressive menus */
+/* *********Arrivée progressive menus************* */
 .entrees_menu {
         opacity: 0;
      animation:fadein ;
@@ -180,7 +175,7 @@ body {
     overflow: hidden;
     position: relative;
 }
-.icon_g {
+.icon_g { 
     background-color: #99E2D0;
     color: white;
     display: flex;
@@ -189,25 +184,29 @@ body {
   position: absolute;
     border-top-right-radius: 22px;
     border-bottom-right-radius: 22px;
-    height: 85px;
+    height: 100%;
     width: 0;
     right: 0;
     transition-duration: 500ms;
     
 }
 
-
-
 .starter:hover .icon_g{
-width: 60px;
+/*width: 60px;*/
+width: 20%;
+margin-left: 2rem;
 }
-
+.starter:hover .menu_name{
+    width: 40%;
+}
 .plat_green{
     width: 80%;
     margin-left: 5px;
 }
-
-
+.plat_green{
+    width: 80%;
+    margin: 5px
+}
 .starter h3{
     overflow: hidden;
     white-space: nowrap;
@@ -221,6 +220,7 @@ width: 60px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-size: 14px;
    /* padding-bottom: 5px;
     margin-left: 7px;
     font-size: 14px;*/
@@ -234,10 +234,12 @@ align-items: flex-end;
 padding-bottom: 11px;
 font-size: 14px;
 width: 20%;
+
  }
 /* lors du survol */
 .starter:hover .price{ 
     transform: translateX(-45px);
+    /*transition-duration: 500ms;*/
 }
 
  /*VIGNETTE VERTE MOBILE*/
@@ -248,8 +250,14 @@ width: 20%;
    /*padding: 30px;*/
 }
 
+.starter:hover .icon_g > i{
+    transform: rotate(360deg);
+    transition-duration: 800ms;
 
- /*PARTIE BOUTON COMMANDER */
+}
+
+
+ /*Bouton --> COMMANDER */
 
 .second-button{
     display: flex;
@@ -276,27 +284,11 @@ width: 20%;
 }
 
 
- /* PARTIE ANIMATION GREEN */
-
- /*.icon_g {
-    position: relative;
- }
- .icone_g{
-    position:absolute;
-    opacity:0;
-    transition-duration: 5s;
-    background-color: aqua;
-    color-scheme: transparent;
- }
- .icon_g:hover .fa-regular{
-    opacity:1
- }*/
-
- /*FOOTER*/
+ /********************************FOOTER*******************************************/
 
 .container_footer{
     background-color: #353535;
-       
+     text-align: center;  
 }
 
 .column{
