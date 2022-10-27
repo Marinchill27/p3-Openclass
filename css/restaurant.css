@@ -284,7 +284,9 @@ padding-left: 5px;
 .second-button input:hover {
     -webkit-box-shadow: 0px 9px 20px 1px grey;
     box-shadow: 0px 9px 20px 1px grey;
-}
+    filter: brightness(1.2);
+    }
+
 
 
  /********************************FOOTER*******************************************/
@@ -326,6 +328,8 @@ margin-right: 10px;
     color: white;
 }
  
+
+/*******************FORMAT TABLETTE****************************************/
 @media screen and (min-width:768px) {
     
 .fleche{
@@ -350,5 +354,12 @@ margin-right: 10px;
         .starter{
             width: 300px;
         }
+}
+
+/*********************FORMAT ORDINATEUR**************************************/
+@media screen and (min-width:992px){
+    .logo img{
+        width: 80%;
+    }
 }
 
