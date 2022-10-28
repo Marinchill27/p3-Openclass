@@ -17,53 +17,7 @@ body {
 
 
 /* .......................FORMAT TEL............................*/
-/* SPINNER */
-/*.section{
-    background-color: #FFF;
-    line-height: 500px;
-    height: 500px;
-}
-.loader {
- width: 50px;
-    height: 50px;
-    display: inline-block; 
-    vertical-align: middle; 
-   position: relative; 
-}
-/** quart de cercle 
-.loader-quart{
-    
-       border-radius: 100px;
-     border: 12px solid #9356DC}
-     
- 
- /*QUART DE CERCLE 
- 
- .loader-quart:after{
-     content: '';
-     position: absolute;
-     top:-12px;
-     left:-12px;
-     bottom:-12px;
-     right: -12px;
-     border-radius:100px;
-     border: 12px solid  #ff79da;
-     border-top-color:#9356DC;
-     animation-name: rotation;
-     animation-duration: 1s;
-     animation-iteration-count: infinite;  
-    
- }
- 
- 
- /*ANIMATION DU LOADER : ROTATION
- 
- @keyframes rotation{
-     0%{transform: rotate(0deg);}
- 
-     100%{transform: rotate(360deg);}
- }
-*/
+/*SPINNER*/
 .container_page{
     opacity:1;
     animation: opacity_container 3.5s;
@@ -253,7 +207,7 @@ body {
 }
 
 
-.card_stage .fa-solid:hover{ /* COULEUR VIOLETTE AU SURVOL DES FILTRES*/
+.card_stage .fa-solid:hover{ 
     color:#9356DC;
 }
 
@@ -303,7 +257,7 @@ h4 .numbers {
     margin-right: 20px;
 }
 
-/*.................PARTIE CARDS RESTAURANT......................................*/
+/*.................PARTIE CARDS RESTAURANT......................................
 
 .card-restaurants{
     flex-direction: column;
@@ -406,7 +360,7 @@ margin:10px
 
 .fa-heart::before{
     padding: 20px;
-}
+ }
 .heart{
     position: relative;
     transition:all 500ms;
