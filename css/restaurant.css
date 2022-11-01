@@ -104,54 +104,60 @@ body {
 }
 
 /* *********Arrivée progressive menus************* */
-.entrees_menu {
+  /* .entrees_menu {
         opacity: 0;
      animation:fadein ;
-     animation-duration: 3s forwards;
-   /* -moz-animation: fadein  
-     -webkit-animation:fadein; */
- }
+     animation-duration: 1s forwards;
+ -moz-animation: fadein  
+     -webkit-animation:fadein; 
+ }*/
  
- .entrees_menu {
+ /*.entrees_menu {
      opacity: 1;
- }
+ }*/
 
  .starter_1{
-    animation: fadein 1s 0.4s forwards;
+    animation: fadein 1s 0.4s backwards ;
+   
  }
 
  .starter_2{
-    animation: fadein 1s 0.6s forwards;
+    animation: fadein 1s 0.6s backwards;
  }
 
  .starter_3{
-    animation: fadein 1s 0.8s forwards;
+    animation: fadein 1s 0.8s backwards;
  }
  .starter_4{
-    animation: fadein 1s 1s forwards;
+    animation: fadein 1s 1s backwards;
  }
  .starter_5{
-    animation: fadein 1s 1.2s forwards;
+    animation: fadein 1s 1.2s backwards;
  }
  .starter_6{
-    animation: fadein 1s 1.4s forwards;
+    animation: fadein 1s 1.4s backwards;
  }
 
  .starter_7{
-    animation: fadein 1s 1.6s forwards;
+    animation: fadein 1s 1.6s backwards;
  }
 
  .starter_8{
-    animation: fadein 1s 1.8s forwards;
+    animation: fadein 1s 1.8s backwards;
  }
  .starter_9{
-    animation: fadein 1s 2s forwards;
+    animation: fadein 1s 2s backwards
  }
  @keyframes fadein{
      from{
-        transform: translateY(50%);
+       transform: translateY(50%);
         opacity:0;  
      }
+
+     20%{opacity: 0.2;}
+     50%{opacity: 0.5;}
+     75%{opacity:0.8}
+     
      to{
         transform: translateY(0);
          opacity: 1;
@@ -170,6 +176,8 @@ body {
     box-shadow: 0px 6px 14px 1px rgb(146, 144, 144);
     overflow: hidden;
     /*position: relative;*/
+    
+
 }
 .icon_g { 
     background-color: #99E2D0;
@@ -193,17 +201,15 @@ body {
 width: 20%;
 /*margin-left: 2rem;*/
 }
-.starter:hover .menu_name{
+/*.starter:hover .menu_name{
     width: 40%;
-}
+}*/
 .plat_green{
-    width: 80%;
-    margin-left: 5px;
+    width: 100px;
+    padding-left: 5px;
+    flex-grow: 1;
 }
-.plat_green{
-    width: 80%;
-   /* margin: 5px*/
-}
+
 .starter h3{
     overflow: hidden;
     white-space: nowrap;
@@ -222,7 +228,7 @@ width: 20%;
     margin-top: 7px;
    /* padding-bottom: 5px;
     margin-left: 7px;*/
-    font-size: 14px;
+   
 }
 
 .price{
@@ -239,10 +245,10 @@ padding-left: 5px;
 
  }
 /* lors du survol */
-.starter:hover .price{ 
+/*.starter:hover .price{ 
     transform: translateX(-45px);
    transition-duration: 500ms;
-}
+}*/
 
  /*VIGNETTE VERTE MOBILE*/
  
@@ -351,7 +357,7 @@ margin-right: 10px;
         }
 
         .starter{
-            width: 300px;
+           width: 300px;
         }
 }
 

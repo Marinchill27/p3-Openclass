@@ -207,7 +207,7 @@ body {
 }
 
 
-.card_stage .fa-solid:hover{ 
+ .card_stage:hover .fa-solid { 
     color:#9356DC;
 }
 
@@ -373,7 +373,7 @@ margin:10px
     background:-webkit-linear-gradient(top,#9356DC, #FF79DA);
    -webkit-background-clip:text;
     color:transparent;
-    width: 300px;
+    /*width: 300px;*/
 
 }
 .heart:hover {
