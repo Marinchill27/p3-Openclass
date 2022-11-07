@@ -68,7 +68,34 @@ body {
 
 
 
+
 /* Nom du restaurant et coeur  */
+
+.fa-heart::before{
+    padding: 20px;
+ }
+.heart{
+    position: relative;
+    transition:all 500ms;
+    
+}
+.heart .fa-solid{
+    position: absolute;
+    opacity: 0;
+    transition-duration: 2s;
+    background:-webkit-linear-gradient(top,#9356DC, #FF79DA);
+   -webkit-background-clip:text;
+    color:transparent;
+    /*width: 300px;*/
+
+}
+.heart:hover {
+    transform: scale(1.5);
+    transition:all 500ms;
+ }  
+.heart:hover .fa-solid{
+    opacity: 1;
+ }   
 
 .title_restau{
    display: flex;
