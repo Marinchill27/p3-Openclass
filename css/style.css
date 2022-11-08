@@ -54,7 +54,7 @@ body {
     bottom:-12px;
     right: -12px;
     border-radius:50%;
-    border: 50px solid  #ff79da;
+    border: 20px solid  #ff79da;
     border-top-color:#9356DC;
     animation-name: rotation;
     animation-duration: 3.5s;
@@ -69,27 +69,14 @@ body {
 }
 
 @keyframes opacity_spinner{
-0%{ 
-        opacity: 1;
-    }
-
-
-    100%{
-        opacity:0;
-    }
-
+0%{  opacity: 1;}
+100%{opacity:0;}
 }
 
 @keyframes opacity_container{
-    0%{
-       opacity:0;
-    }
-    80%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+    0%{opacity:0; }
+    80%{ opacity: 0;}
+    100%{opacity: 1;}
 }
 /* HEADER */
 
@@ -369,7 +356,6 @@ margin:10px
 .heart{
     position: relative;
     transition:all 500ms;
-    
 }
 .heart .fa-solid{
     position: absolute;
@@ -379,7 +365,6 @@ margin:10px
    -webkit-background-clip:text;
     color:transparent;
     /*width: 300px;*/
-
 }
 .heart:hover {
     transform: scale(1.5);
