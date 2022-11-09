@@ -83,7 +83,7 @@ body {
 .container_logo {
     background-color: white;
     box-shadow: 0px 0px 12px 0px grey;
-    /*position: fixed;*/
+    position: relative;
     width: 100%;
 }
 
@@ -94,7 +94,7 @@ body {
 
 .logo {
     text-align: center;
-    box-shadow: 0px 0px 12px 0px grey;
+    /*box-shadow: 0px 0px 12px 0px grey;*/
 }
 
 
@@ -106,6 +106,7 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #e5e5e5;
+   
     
 }
 
@@ -411,7 +412,7 @@ margin:10px
 }*/
 
 .column h4{
-    font-family:"Shrikhand";
+    font-family:"Shrikhand" ;
     color: white;
 }
 
@@ -436,7 +437,7 @@ margin-right: 10px;
     /*.................................HEADER................................. */
     .container_logo {
         background-color: white;
-        box-shadow: 0px 0px 12px 0px grey;
+        /*box-shadow: 0px 0px 12px 0px grey;*/
         position: relative;
     }
 
