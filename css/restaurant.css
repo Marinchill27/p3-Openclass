@@ -81,7 +81,7 @@ body {
 .heart .fa-solid{
     position: absolute;
     opacity: 0;
-    transition-duration: 1s;
+    transition-duration: 2s;
     background:-webkit-linear-gradient(top,#9356DC, #FF79DA);
    -webkit-background-clip:text;
     color:transparent;
@@ -95,6 +95,14 @@ body {
 .heart:hover .fa-solid{
     opacity: 1;
  }   
+
+ .heart .fa-regular{
+    transition-duration: 2s;
+ }
+
+ .heart:hover .fa-regular{
+    opacity: 0;
+ }
 
 .title_restau{
    display: flex;
